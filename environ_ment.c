@@ -31,7 +31,7 @@ char **_copyenv(void)
 
 	for (index = 0; environ[index]; index++)
 	{
-		new_environ[index] = malloc(_strlen(environ[index]) + 1)
+		new_environ[index] = malloc(_strlen(environ[index]) + 1);
 
 		if (!new_environ[index])
 		{
